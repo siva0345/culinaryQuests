@@ -1,0 +1,79 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Loginbody{
+    height: 100vh;
+    width: 100vw;
+    background-image: url('FormBg2.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.LoginContainer{
+    justify-content: center;
+}
+.LoginBox{
+    display: flex;
+   
+    height: 700px;
+    width: 580px;
+    /* background-color: #ffffff;
+    border: black;
+    justify-content: space-around; */
+        margin-left: 860px;
+}
+.LoginBody-1{
+    height: 500px;
+    width: 500px;
+    background-color: #ffffff;
+    border: 5px solid #ffc107;
+    opacity: 0.8;
+    padding: 50px;
+}
+.LoginBody-Field1{
+    height: 50px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+.LoginBody-Field1 label{
+    font: 1em sans-serif;
+    font-weight: bolder;
+}
+.LoginBody-Field1 input{
+    box-sizing: border-box;
+    width: 300px;
+}
+.LoginBody-button1 {
+    height: 50px;
+    width: 300px;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+.LoginBody-button1 button{
+    box-sizing: border-box;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(33, 124, 221);
+    color: white;
+}
+.LoginBody-button2 {
+    height: 50px;
+    width: 300px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.LoginBody-button2 button{
+    box-sizing: border-box;
+    width: 300px;
+    border-radius: 5px;
+    background-color: rgb(33, 124, 221);
+    color: white;
+}
+.LoginBody-text{
+    margin-left: 40px;
+    margin-top: 20px;
+    font: 1em sans-serif;
+    font-weight: bold;
+}

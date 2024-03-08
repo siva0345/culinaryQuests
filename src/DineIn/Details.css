@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Details{
+    height: 1000px;
+    width: 100vw;
+    background-color: #FFF4D2;
+}
+.title h4{
+    text-align: center;
+    font-family: Segoe Script;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(118, 20, 29);
+}
+.Name label{
+    margin-top: 30px;
+    margin-left: 550px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    background-color: #FFF4D2;
+    color: rgb(118, 20, 29);
+}
+.Name input{
+    margin-left: 550px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+    background-color: #FFF4D2;
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 5px;
+}
+.PhoneNumber label{
+    margin-top: 30px;
+    margin-left: 550px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    background-color: #FFF4D2;
+    color: rgb(118, 20, 29);
+}
+.PhoneNumber input{
+    margin-left: 550px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+    background-color: #FFF4D2;
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 5px;
+}
+.Address label{
+    margin-top: 50px;
+    margin-left: 550px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+}
+.Address textarea{
+    margin-left: 550px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    background-color: #FFF4D2;
+    color: rgb(118, 20, 29); 
+    border-radius: 5px;
+}
+.PaymentDetails h4{
+    margin-top: 50px;
+    text-align: center;
+    font-family: Segoe Script;
+    font-size: 30px;
+    font-weight: bolder;
+    color: rgb(118, 20, 29);
+}
+.PaymentDetails input{
+    margin-top: 30px;
+    margin-left: 550px;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29); 
+}
+.box1{
+    justify-content: center;
+    display: flex;
+}
+.b1 label{
+    margin-top: 50px;
+    margin-left: 180px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+}
+.b1 input{
+    margin-left: 180px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+    background-color: #FFF4D2;
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 5px;
+}
+.box2{
+    justify-content: center;
+    display: flex;
+}
+.b2 label{
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+}
+.b2 input{
+    margin-left: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+    background-color: #FFF4D2;
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 5px;
+}
+.b3 label{
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+}
+.b3 input{
+    margin-left: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+    background-color: #FFF4D2;
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 5px;
+}
+.b4 label{
+    margin-top: 50px;
+    margin-left: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+}
+.b4 input{
+    margin-left: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 50px;
+    color: rgb(118, 20, 29);
+    background-color: #FFF4D2;
+    box-sizing: border-box;
+    width: 350px;
+    border-radius: 5px;
+}
+#submit{
+    margin-top: 30px;
+    margin-left: 600px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}

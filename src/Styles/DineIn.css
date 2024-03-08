@@ -1,0 +1,43 @@
+.FirstRow{
+    justify-content: center;
+    display: flex;
+}
+.FirstRow label{
+    font-family: Segoe Script;
+    font-weight: bold;
+    color: rgb(118, 20, 29);
+}
+.SecondRow{
+    justify-content: center;
+    display: flex;
+}
+.SecondRow label{
+    font-family: Segoe Script;
+    font-weight: bold;
+    color: rgb(118, 20, 29);
+}
+.button{
+    margin-top: 30px;
+    margin-left: 500px;
+    margin-bottom: 100px;
+}
+#backbutton{
+    margin-top: 10px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(118, 20, 29);
+    color: white;
+}
+#bookbutton{
+    margin-top: 5px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}

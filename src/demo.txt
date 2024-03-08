@@ -1,0 +1,173 @@
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import { useLocation } from 'react-router-dom';
+import './Styles/Menu.css';
+import m1 from './Images/menuimg.jpg';
+
+export default function RestaurantMenu({ id }) {
+    const location = useLocation();
+    const parent = location.state?.data || {};
+    const [menuData, setMenuData] = useState([]);
+    const [restaurantData, setRestaurantData] = useState({});
+
+    useEffect(() => {
+        const fetchMenuData = async () => {
+            try {
+                const response = await axios.get(`http://localhost:3003/ShowMenu/${parent.id}`);
+                console.log(response.data);
+                setMenuData(response.data);
+            } catch (error) {
+                console.error('Error Fetching Menu Data', error);
+            }
+        };
+
+        const fetchResData = async () => {
+            try {
+                const response1 = await axios.get(`http://localhost:3003/ShowRes/${parent.id}`);
+                console.log(response1.data);
+                setRestaurantData(response1.data);
+            } catch (error) {
+                console.error('Error Fetching Restaurant Data', error);
+            }
+        };
+
+        fetchMenuData();
+        fetchResData();
+    }, [parent.id]);
+
+    const HandleCart = async (Id, Name, Price) => {
+        console.log('HandleCart');
+        try {
+            await axios.post('http://localhost:3003/AddToCart', {
+                Id,
+                Name,
+                Price,
+            });
+            console.log('Added to cart:', Name);
+            alert('Item Added To Cart');
+        } catch (error) {
+            console.error('Error adding to cart', error);
+        }
+    };
+
+    return (
+        <div className='MenuBody'>
+            {(menuData.length === 0 || !restaurantData) ? (
+                <p>Loading...</p>
+            ) : (
+                <div className='DetailsBody'>
+                    <div className='Detailsimamge'>
+                        <img src={m1} alt='Menu' />
+                    </div>
+                    <div className='Detailsres'>
+                        <div className='Detailsresdata'>
+                            <div className='resimg'>
+                                <img src={restaurantData.Image} alt='resimage' />
+                            </div>
+                            <div className='resdata'>
+                                <h1>{restaurantData.Name}</h1>
+                                <p> <h4>Cuisines:</h4>
+                                    {restaurantData.Cuisines} <br />
+                                    <h4>Timings:</h4>
+                                    {restaurantData.Timings}
+                                </p>
+                            </div>
+                            <div className='resloc'>
+                                <h4>Location:</h4>
+                                <p>{restaurantData.Location}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='menutable'>
+                        <table className='table table-hover'>
+                            <tbody>
+                                {menuData.map((menu) => (
+                                    <tr key={menu.id}>
+                                        <td>{menu.Name}<br />
+                                            Price: {menu.Price}/-
+                                        </td>
+                                        <td><img src={menu.Image} style={{ height: '50px', width: '50px' }} alt='menuimg' /></td>
+                                        <td><button onClick={() => HandleCart(menu.id, menu.Name, menu.Price)}>Add to cart</button></td>
+                                    </tr>
+                                ))}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+}
+
+
+
+
+
+import React from 'react';
+import './Styles/Cart.css';
+import axios from 'axios';
+import { useState, useEffect } from 'react';
+// import { useNavigate } from 'react-router-dom';
+import { Card, Row, Col } from 'react-bootstrap';
+
+export default function MyCart() {
+
+    // const navigate = useNavigate();
+    const [data, setData] = useState([])
+    useEffect(() => {
+        const  Fetchcartdata= async () => {
+            try {
+                const response = await axios.delete('http://localhost:3003/ShowCart');
+                setData(response.data);
+            } catch (error) {
+                console.error('Error Fetching Cart Data', error);
+            }
+        }; Fetchcartdata();
+    }, []);
+    const HandleRemove = async (ID) => {
+        console.log('HandleCart');
+        try {
+            await axios.post('http://localhost:3003/DeleteCart', {
+                ID
+            });
+            const updatedData = data.filter((item) => item.id !== ID);
+            setData(updatedData);
+            alert('Item Removed From Cart');
+        } catch (error) {
+            console.error('Error Removing From cart', error);
+        }
+    };
+    return (
+        <div>
+            <div className='CartTitle'>
+                <h3>My Cart</h3>
+            </div>
+            <div className='CartData'>
+                <Row xs={1} md={2} lg={4}>
+                    {data.map((cart) => (
+                        <Col key={cart.id}>
+                            <Card style={{ height: '500px', width: '300px', margin: '0px', border: '20px solid white' }} >
+                                <Card.Img variant="top"
+                                    src={cart.ItemImage}
+                                    alt='FoodImage'
+                                    style={{ height: '200px', width: '298px', objectFit: 'cover' }}
+                                />
+                                <Card.Body>
+                                    <Card.Title style={{ fontWeight: 'normal', color: 'black' }}><b>{cart.Name}</b></Card.Title>
+                                    <Card.Text>
+                                        <b><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-currency-rupee" viewBox="0 0 16 16">
+                                            <path d="M4 3.06h2.726c1.22 0 2.12.575 2.325 1.724H4v1.051h5.051C8.855 7.001 8 7.558 6.788 7.558H4v1.317L8.437 14h2.11L6.095 8.884h.855c2.316-.018 3.465-1.476 3.688-3.049H12V4.784h-1.345c-.08-.778-.357-1.335-.793-1.732H12V2H4z" />
+                                        </svg></b> {cart.Price}<br />
+                                        Quantity:{cart.quantity}<br/>
+                                        <button>OrderNow</button>
+                                    <button onClick={HandleRemove(cart.id)}>Remove From Cart</button>
+                                    </Card.Text>
+                                </Card.Body>
+                            </Card>
+                        </Col>
+                    ))}
+                </Row>
+            </div>
+        </div>
+    )
+}

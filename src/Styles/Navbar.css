@@ -1,0 +1,61 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.NavbarContainer{
+    width: 100vw;
+}
+.Navbarhead{
+    height: 80px;
+    width: 100vw;
+    background-color: #ffc107;
+    display: flex;
+}
+.Navbarhead img{
+    height: 80px;
+    width: 120px;
+}
+.navbar{
+    flex-direction: column;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(118, 20, 29);
+}
+.nav1{
+    height: 5px;
+    width: 100%;
+    margin-left: 160px;
+    margin-bottom: 5px;
+}
+.nav1_elements{
+    padding: 10px;
+    display: flex;
+    list-style-type: none;
+    font-size: 20px;
+}
+#element1{
+    margin-right: 30px;
+    font-family: cursive;
+    font-weight: bold;
+}
+#element2{
+    margin-left: 50px;
+    font-family: cursive;
+    font-weight: bold;
+}
+#element3{
+    margin-left: 50px;
+    font-family: cursive;
+    font-weight: bold;
+}
+#element0{
+    margin-left: 30px;
+    font-family: cursive;
+    font-weight: bold;
+}
+#element4{
+    margin-left: 240px;
+    font-family: cursive;
+    font-weight: bold;
+}

@@ -1,0 +1,123 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.AboutbBody{
+    /* height: 100vh;
+    width: 100vw; */
+    background-color: #FFF4D2;
+}
+.AboutContainer{
+    height: 1450px;
+    width: 100%;
+}
+.Aboutdiv{
+    margin-left: 160px;
+    justify-content: center;
+    display:flex ;
+}
+.AboutImage{
+    margin-top: 120px;
+}
+.AboutImage img{
+    height: 400px;
+    width: 700px;
+    border: 5px solid #ffc107; 
+}
+.AboutText{
+    height: 40%;
+    width: 50%;
+    margin-top: 250px;
+}
+.AboutText h2{
+    font-family: Segoe Script;
+    font-size: 40;
+    font-weight: 200;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+.AboutText p{
+    font-size: 23px;
+    font-weight: 50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+.AboutText b{
+    font-size: 50;
+    font-weight: 200;
+    font-family: Lucida Handwriting;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+.Aboutdiv1{
+    height:600px;
+    width: 1100px;
+    margin-top: 50px;
+    margin-left: 160px;
+    justify-content: center;
+    display:flex ;
+}
+.AboutImage1{
+    margin-top: 120px;
+    margin-left: 70px;
+}
+.AboutImage1 img{
+    border: 5px solid #ffc107;
+}
+.AboutText1{
+    height: 40%;
+    width: 50%;
+    margin-top: 250px;
+}
+.AboutText1 p{
+    font-size: 23px;
+    font-weight: 50;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+.AboutText1 b{
+    font-size: 50;
+    font-weight: 200;
+    font-family: Lucida Handwriting;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+.AboutFooter{
+    height: 250px;
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+    border: 1px solid #ffc107;
+}
+.AboutFooter-1{
+    height: 150px;
+    margin: 50px;
+
+}
+.AboutFooter-1 img{
+    height: 100px;
+    width: 100px;
+}
+.AboutFooter-1 h4{
+    font-family: Lucida Handwriting;
+    font-size: small;
+    font-weight: bold;
+    color: rgb(118, 20, 29); 
+}
+.AboutFooter-1 span{
+    margin-left: 15px;
+}
+.AboutFooter-2{
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.AboutFooter-2 ul li{
+    font-size: 15px;
+    padding: 5px;
+    list-style-type: none;
+}
+.AboutFooter-2 ul li a{
+    color: rgb(118, 20, 29);
+}

@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.CityTitle h3{
+    margin-top: 50px;
+    margin-right: 950px;
+    text-align: left;
+    font-family: Segoe Script;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+.card-title h5{
+    font-family: sans-serif;
+}
+.backbutton{
+    margin-left: 450px;
+}
+.backbutton button{
+    margin-left: 50px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(118, 20, 29);
+    color: white;
+}

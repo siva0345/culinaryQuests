@@ -1,0 +1,96 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.MenuBody{
+    height: 3000px;
+    width: 100vw;
+    background-color: #FFF4D2;
+}
+.Detailsimamge img{
+    height: 500px;
+    width: 100% ;   
+}
+.Detailsres{
+    height: 500px;
+    width: 100%;
+}
+.Detailsresdata{
+    justify-content: center;
+    display: flex;
+}
+.resimg img{
+    margin-top: 90px;
+    height: 300px;
+    width: 500px;
+    border: 5px solid #ffc107;
+    margin-right: 60px
+}
+.resdata h1{
+    margin-top: 150px;
+    font-size: 60;
+    font-weight: 200;
+    font-family: Segoe Script;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+.resdata h4{
+    margin-top: 15px;
+    font-size: 10;
+    font-family: Lucida Handwriting;
+    color: rgb(118, 20, 29);
+    text-align: left;
+}
+.resdata p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(118, 20, 29);
+    font-size: 18px;
+    font-weight: 50px;
+}
+.resloc{
+    margin-left: 50px;
+    margin-right: 150px;
+}
+.resloc h4{
+    margin-top: 210px;
+    font-size: 10;
+    font-family: Lucida Handwriting;
+    color: rgb(118, 20, 29);
+    text-align: left;
+}
+.resloc p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(118, 20, 29);
+    font-size: 18px;
+    font-weight: 50px;
+}
+.menutable{
+    margin-left: 300px;
+    width: 900px;
+}
+.menutable button{
+    margin-left: 150px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(33, 124, 221);
+    color: white;
+}
+.menutable input{
+    background-color: #FFF4D2;
+    width: 45px;
+}
+.cartpagebutton{
+    margin-left: 450px;
+}
+.cartpagebutton button{
+    margin-top: 50px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(118, 20, 29);
+    color: white;
+}

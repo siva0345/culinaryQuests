@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.CartTitle h3{
+    margin-top: 50px;
+    text-align: left;
+    font-family: Segoe Script;
+    font-size: 50px;
+    font-weight: bolder;
+    color: rgb(118, 20, 29);
+    text-align: center;
+}
+#Quantitydecrease{
+    box-sizing: border-box;
+    height: 30px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: rgb(118, 20, 29);
+    color: white;
+    margin-right: 10px;
+}
+#QuantityIncrease{
+    box-sizing: border-box;
+    height: 30px;
+    width: 20px;
+    border-radius: 5px;
+    background-color: rgb(118, 20, 29);
+    color: white;
+}
+#b1{
+    margin-top: 5px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+}
+#b2{
+    margin-top: 10px;
+    margin-left: 50px;
+    box-sizing: border-box;
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(118, 20, 29);
+    color: white;
+}

@@ -1,0 +1,291 @@
+
+  .body:before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background:linear-gradient(rgb(11, 11, 11),rgba(0, 0, 0, 0.231),rgb(0, 0, 0));
+  }
+  .downbody{
+    background-color: #FFF4D2;
+    height: 100vh;
+    width: 100%;
+  }
+   .carouselPart{
+    margin-left: 90px;
+    height: 500px;
+    width: 800px;
+  }
+  .carouselPart img{
+    margin-top: 90px;
+  }
+  .d-block{
+    height: 500px;
+    width: 800px;
+  }
+  .textselect2{
+    text-align: center;
+    height: 50px;
+    width: 370px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+    border: 5px solid #ffc107;
+  }
+  #nameNameh1{
+    text-align: center;
+    font-family: Lucida Handwriting;
+    font-size: 33px;
+    font-weight: bold;
+    color: rgb(118, 20, 29);
+  }
+  .typeSearch{
+    height: 50px;
+    width: 230px;
+    color: black;
+    text-align: center;
+    font-size: 25px;  
+  }
+  button[type="search"]{
+    height: 40px;
+    width: 70px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.234);
+    color: black;
+  }
+  .cbutton{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(33, 124, 221);
+    font-size: 20px;
+  }
+  .countryContent{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+  }
+  .countryImage{
+    height: 250px;
+    width: 250px;
+    border-radius: 20px;
+  }
+  .countries{
+    padding: 15px;
+    float: right;
+    margin-right: 100px;
+    margin-top: 150px;
+    height: auto;
+    width: 450px;
+    position: relative;
+    border: 5px solid #ffc107;
+   }
+   .textselect{
+    text-align: center;
+    height: 50px;
+    width: 270px;;
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-radius: 20px;
+  }
+  .textselect2{
+    text-align: center;
+    height: 50px;
+    width: 370px;
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    margin-right: 200px;
+  }
+  .typeSearch{
+    height: 50px;
+    width: 370px;
+    color: black;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 25px;  
+  }
+  .list{
+    list-style-type: none;
+    color: black;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .anchorTag{
+    text-decoration: none;
+    list-style-type: none;
+  }
+  .containerBody2{
+    overflow:scroll;
+    border: 1px solid black;
+    height: 700px;
+    width: 400px;
+    float: right;
+    margin-right: 150px;
+    margin-top: -50px;
+  }
+  .carouselPart2{
+    margin-top: 150px;
+    margin-left: 100px;
+    height: 400px;
+    width: 700px;
+   }
+   .cardDeck{
+    height: 300px;
+    width: 600px;
+    border: 1px black solid;
+   }
+   .CardContainer2{
+    height: 1000px;
+    width: 700px;
+    text-align: center;
+    justify-content: center;
+    border: black 1px solid;
+   }
+  
+   #state{
+    border: none;
+    color: black;
+    margin-top: 10px;
+    font-size: 24px;
+   }
+   .secondDropDownCity{
+    margin-top: 60px;
+    color: white;
+    height: 45px;
+    width: 200px;
+    margin-left: 10px;
+   }
+   #city{
+    border: #ffc107 5px solid;
+    border-radius: 10px;
+    height: 50px;
+    padding: 10px;
+    width: 350px;
+    color: black;
+    margin-top: 10px;
+    font-size: 22px;
+   }
+  
+  
+  
+  
+  
+  
+  
+  
+  /*  */
+  
+  
+  
+  
+  
+  
+   @layer base {
+    body{
+      background-color: #14161b transparent;
+      overflow: none;
+    }
+   }
+   .slick-slide > div {
+    margin: 0 5px;
+   }
+   .swipeContainer2{
+    border: 1px solid black transparent;
+    height: 380px;
+    width: 700px;
+    padding-top: 30px;
+    margin-top: -30px;
+    border-radius: 50px;
+    text-align: center;
+    color:cadetblue;
+   }
+   .card-image{
+    height: 200px;
+    width: 200px;
+    margin-left: 15px;
+    border-radius: 30%;
+   }
+   .card-card-carousel{
+    height: 160px;
+    width: 150px;
+    text-align: center;
+   }
+   .card-text{
+    text-align: center;
+    font-size: 15px;
+    margin-left: 60px;
+   }
+   .btn{
+    margin-left: 65px;
+   }
+  .card-carousel2{
+    border: 1px solid black transparent;
+    justify-content: center;
+    height:350px;
+    width: max-content;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+  }
+  .card-carousel2:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  /*  */
+  
+  .container3{
+    float: right;
+    margin-right: 50px;
+    margin-top: 80px;
+  }
+  .main-country-container2{
+    border: 1px solid black transparent;
+    height: 500px;
+    width: 720px;
+    margin-top: 0px;
+    text-align: center;
+    margin-right: -10px;
+  }
+  .btn{
+    margin-right: 70px;
+    margin-top: 100px;
+  }
+  #stateInput{
+    height: 40px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.581);
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+  }
+  #countryInput{
+    height: 45px;
+    width: 170px;
+    background-color: rgba(0, 0, 0, 0.581);
+    color: black;
+    text-align: center;
+    border-radius: 15px;
+  }
+  .backbutton{
+    margin-top: 100px
+}
+.backbutton button{
+    margin-left: 150px;
+    box-sizing: border-box;
+    height: 50px;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgb(118, 20, 29);
+    color: white;
+}
+
+#HomeRedirect{
+  margin-left: 150px;
+}
